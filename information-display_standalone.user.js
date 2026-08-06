@@ -117,7 +117,7 @@
 // @copyright           2026, _init (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.0
+// @version             2.0.1
 // @author              _init
 // @icon                https://geofs-assets.evengao6688.workers.dev/icons/information-display.png
 // @match               https://www.geo-fs.com/geofs.php*
@@ -127,14 +127,14 @@
 // @updateURL https://update.greasyfork.org/scripts/581518/GeoFS-V39_Information-Display.meta.js
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(() => {
+    
 
     /**
      * Initialization routine: Registers the INFORMATION tab within the HUD.
      * Requires Core Library helper functions (registerHUDTab, hudCell).
      */
-    window.initHUDInformationDisplayPro = function() {
+    window.initHUDInformationDisplayPro = () => {
         if (window.hudInformationDisplayPro) return;
         
         console.log("[GeoFS-V3.9_Information-Display] >> Initializing telemetry display...");
@@ -192,7 +192,7 @@
          * Primary Refresh Loop: Telemetry Processing
          * Updates UI elements every 100ms based on current aircraft animation values.
          */
-        setInterval(function () {
+        setInterval(() => {
             const y = document.getElementById('flightDataDisplay');
             // Halt if the display panel is obscured
             if (!y || y.style.display === 'none') return;
@@ -223,8 +223,8 @@
                         ];
                         const joke = jokes[Math.floor(Math.random() * jokes.length)];
                         
-                        let rawName = ac.definition.externalName || ac.definition.name || "Unknown Aircraft";
-                        let cleanName = rawName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        const rawName = ac.definition.externalName || ac.definition.name || "Unknown Aircraft";
+                        const cleanName = rawName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
                         
                         nameEl.innerHTML = `<span style="opacity: 0.6; font-style: italic;">${joke}</span><br><span style="font-size: 9px; font-weight: 400;">(${cleanName})</span>`;
                         badgeEl.style.background = "#94a3b8"; 
