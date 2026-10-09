@@ -22,4 +22,4 @@ The centralized glass-cockpit data framework for **GeoFS-V3.9**. This module pro
 2. Install the script via [**Greasy Fork**](https://greasyfork.org/en/scripts/581518-geofs-v3-9-information-display).
 3. Refresh GeoFS and the module will automatically initialize alongside the HUD.
 
-*© 2026 _init. Part of the [**GeoFS-V3.9**_Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home).*
+*© 2026 AMFI-Disable. Part of the [**GeoFS-V3.9**_Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home).*

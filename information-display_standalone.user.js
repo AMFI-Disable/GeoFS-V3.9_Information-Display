@@ -51,57 +51,57 @@
 // @name:lo             GeoFS-V3.9_ການສະແດງຂໍ້ມູນ
 // @name:ur             GeoFS-V3.9_معلوماتی-ڈسپلے
 
-// @description         Precision flight data HUD featuring glassmorphic telemetry readouts. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:vi      Dữ liệu chuyến bay chính xác HUD có các chỉ số đo từ xa dạng thủy tinh. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zh-CN   具有玻璃形态遥测读数的精确飞行数据 HUD。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zh-TW   具有玻璃形態遙測讀數的精確飛行數據 HUD。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ja      グラスモーフィックテレメトリ読み出し機能を備えた高精度の飛行データ HUD。 © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ko      유리 형태의 원격 측정 판독 기능을 갖춘 정밀 비행 데이터 HUD. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fr      HUD de données de vol de précision avec lectures de télémétrie glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:de      Präzises Flugdaten-HUD mit glasmorphischen Telemetrieanzeigen. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:es      HUD de datos de vuelo de precisión con lecturas de telemetría glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pt-BR   HUD de dados de voo de precisão com leituras de telemetria glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pt-PT   HUD de dados de voo de precisão com leituras de telemetria glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ru      HUD прецизионных полетных данных со считыванием гласморфной телеметрии. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ar      شاشة HUD لبيانات الطيران الدقيقة تتميز بقراءات القياس عن بعد ذات الشكل الزجاجي. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:tr      Cam biçimli telemetri okumaları içeren hassas uçuş verileri HUD'u. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:id      Data penerbangan presisi HUD menampilkan pembacaan telemetri glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:th      ข้อมูลการบินที่แม่นยำ HUD พร้อมการอ่านค่าการวัดและส่งข้อมูลทางไกลแบบ glassmorphic © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:pl      Precyzyjny HUD danych lotu z odczytami telemetrii szklistej. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:nl      Precisievluchtgegevens-HUD met glasmorfe telemetrie-uitlezingen. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:it      HUD dei dati di volo di precisione con letture telemetriche vetromorfiche. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sv      Precisionsflygdata HUD med glasmorfiska telemetriavläsningar. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:da      Præcis flyvedata HUD med glasmorfisk telemetriudlæsning. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fi      Tarkat lentotiedot HUD, jossa on lasimorfiset telemetrian lukemat. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:nb      Presisjons flydata HUD med glassmorfe telemetriavlesninger. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:cs      Přesné letové údaje HUD se skleněným telemetrickým zobrazením. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hu      Precíziós repülési adatok HUD üvegmorf telemetriai kijelzésekkel. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ro      HUD de precizie pentru date de zbor cu citiri de telemetrie glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:uk      HUD із точними даними про польоти, що містить скломорфні дані телеметрії. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hi      सटीक उड़ान डेटा HUD जिसमें ग्लासमॉर्फिक टेलीमेट्री रीडआउट शामिल हैं। © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:bn      গ্লাসমর্ফিক টেলিমেট্রি রিডআউট সমন্বিত নির্ভুল ফ্লাইট ডেটা HUD। © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fa      داده‌های دقیق پرواز HUD با خوانش‌های تله‌متری شیشه‌ای. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:he      HUD של נתוני טיסה מדויקים הכוללים קריאות טלמטריה מזכוכית מורפית. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ms      Data penerbangan ketepatan HUD menampilkan bacaan telemetri glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:fil     Precision flight data HUD na nagtatampok ng glassmorphic telemetry readouts. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:el      Δεδομένα πτήσης ακριβείας HUD με υαλομορφικές ενδείξεις τηλεμετρίας. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:hr      HUD preciznih podataka o letu koji sadrži staklomorfna telemetrijska očitavanja. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sk      Presné letové údaje HUD so sklomorfnými telemetrickými údajmi. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:bg      HUD за прецизни данни за полета, включващ стъкломорфни телеметрични показания. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sr      Прецизни ХУД података о лету са телеметријским очитањима стаклене морфологије. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lt      Tikslūs skrydžio duomenų HUD su stiklo morfiniais telemetrijos rodmenimis. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lv      Precīzi lidojuma datu HUD ar stikla morfiskiem telemetrijas rādījumiem. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:et      Täppislennuandmete HUD, millel on klaasmorfsed telemeetrianäidud. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sl      HUD za natančne podatke o letu, ki vsebuje steklomorfne telemetrične odčitke. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ca      HUD de dades de vol de precisió amb lectures de telemetria glassmòrfica. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:af      Presisievlugdata HUD met glasmorfiese telemetrie-uitlesings. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:sw      Data ya usahihi ya ndege ya HUD inayoangazia usomaji wa telemetry ya glassmorphic. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:zu      Idatha yendiza enembile i-HUD efaka ukufundwa kwe-glassmorphic telemetry. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:mn      Шилэн хэлбэрийн телеметрийн уншилтуудыг агуулсан нислэгийн нарийвчлалын өгөгдөл HUD. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:my      glassmorphic telemetry readout များပါရှိသော တိကျသောပျံသန်းမှုဒေတာ HUD။ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:km      ទិន្នន័យហោះហើរភាពជាក់លាក់ HUD បង្ហាញពីការអាន telemetry glassmorphic ។ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:lo      ຂໍ້​ມູນ​ການ​ບິນ​ຄວາມ​ຊັດ​ເຈນ HUD ມີ​ການ​ອ່ານ telemetry glassmorphic​. © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
-// @description:ur      عین مطابق فلائٹ ڈیٹا HUD جس میں گلاسمورفک ٹیلی میٹری ریڈ آؤٹس شامل ہیں۔ © 2026 _init. Part of the GeoFS-V3.9_Ecosystem.
+// @description         Precision flight data HUD featuring glassmorphic telemetry readouts. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:vi      Dữ liệu chuyến bay chính xác HUD có các chỉ số đo từ xa dạng thủy tinh. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zh-CN   具有玻璃形态遥测读数的精确飞行数据 HUD。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zh-TW   具有玻璃形態遙測讀數的精確飛行數據 HUD。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ja      グラスモーフィックテレメトリ読み出し機能を備えた高精度の飛行データ HUD。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ko      유리 형태의 원격 측정 판독 기능을 갖춘 정밀 비행 데이터 HUD. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fr      HUD de données de vol de précision avec lectures de télémétrie glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:de      Präzises Flugdaten-HUD mit glasmorphischen Telemetrieanzeigen. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:es      HUD de datos de vuelo de precisión con lecturas de telemetría glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pt-BR   HUD de dados de voo de precisão com leituras de telemetria glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pt-PT   HUD de dados de voo de precisão com leituras de telemetria glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ru      HUD прецизионных полетных данных со считыванием гласморфной телеметрии. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ar      شاشة HUD لبيانات الطيران الدقيقة تتميز بقراءات القياس عن بعد ذات الشكل الزجاجي. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:tr      Cam biçimli telemetri okumaları içeren hassas uçuş verileri HUD'u. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:id      Data penerbangan presisi HUD menampilkan pembacaan telemetri glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:th      ข้อมูลการบินที่แม่นยำ HUD พร้อมการอ่านค่าการวัดและส่งข้อมูลทางไกลแบบ glassmorphic © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:pl      Precyzyjny HUD danych lotu z odczytami telemetrii szklistej. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:nl      Precisievluchtgegevens-HUD met glasmorfe telemetrie-uitlezingen. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:it      HUD dei dati di volo di precisione con letture telemetriche vetromorfiche. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sv      Precisionsflygdata HUD med glasmorfiska telemetriavläsningar. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:da      Præcis flyvedata HUD med glasmorfisk telemetriudlæsning. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fi      Tarkat lentotiedot HUD, jossa on lasimorfiset telemetrian lukemat. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:nb      Presisjons flydata HUD med glassmorfe telemetriavlesninger. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:cs      Přesné letové údaje HUD se skleněným telemetrickým zobrazením. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hu      Precíziós repülési adatok HUD üvegmorf telemetriai kijelzésekkel. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ro      HUD de precizie pentru date de zbor cu citiri de telemetrie glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:uk      HUD із точними даними про польоти, що містить скломорфні дані телеметрії. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hi      सटीक उड़ान डेटा HUD जिसमें ग्लासमॉर्फिक टेलीमेट्री रीडआउट शामिल हैं। © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:bn      গ্লাসমর্ফিক টেলিমেট্রি রিডআউট সমন্বিত নির্ভুল ফ্লাইট ডেটা HUD। © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fa      داده‌های دقیق پرواز HUD با خوانش‌های تله‌متری شیشه‌ای. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:he      HUD של נתוני טיסה מדויקים הכוללים קריאות טלמטריה מזכוכית מורפית. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ms      Data penerbangan ketepatan HUD menampilkan bacaan telemetri glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:fil     Precision flight data HUD na nagtatampok ng glassmorphic telemetry readouts. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:el      Δεδομένα πτήσης ακριβείας HUD με υαλομορφικές ενδείξεις τηλεμετρίας. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:hr      HUD preciznih podataka o letu koji sadrži staklomorfna telemetrijska očitavanja. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sk      Presné letové údaje HUD so sklomorfnými telemetrickými údajmi. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:bg      HUD за прецизни данни за полета, включващ стъкломорфни телеметрични показания. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sr      Прецизни ХУД података о лету са телеметријским очитањима стаклене морфологије. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lt      Tikslūs skrydžio duomenų HUD su stiklo morfiniais telemetrijos rodmenimis. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lv      Precīzi lidojuma datu HUD ar stikla morfiskiem telemetrijas rādījumiem. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:et      Täppislennuandmete HUD, millel on klaasmorfsed telemeetrianäidud. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sl      HUD za natančne podatke o letu, ki vsebuje steklomorfne telemetrične odčitke. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ca      HUD de dades de vol de precisió amb lectures de telemetria glassmòrfica. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:af      Presisievlugdata HUD met glasmorfiese telemetrie-uitlesings. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:sw      Data ya usahihi ya ndege ya HUD inayoangazia usomaji wa telemetry ya glassmorphic. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:zu      Idatha yendiza enembile i-HUD efaka ukufundwa kwe-glassmorphic telemetry. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:mn      Шилэн хэлбэрийн телеметрийн уншилтуудыг агуулсан нислэгийн нарийвчлалын өгөгдөл HUD. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:my      glassmorphic telemetry readout များပါရှိသော တိကျသောပျံသန်းမှုဒေတာ HUD။ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:km      ទិន្នន័យហោះហើរភាពជាក់លាក់ HUD បង្ហាញពីការអាន telemetry glassmorphic ។ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:lo      ຂໍ້​ມູນ​ການ​ບິນ​ຄວາມ​ຊັດ​ເຈນ HUD ມີ​ການ​ອ່ານ telemetry glassmorphic​. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
+// @description:ur      عین مطابق فلائٹ ڈیٹا HUD جس میں گلاسمورفک ٹیلی میٹری ریڈ آؤٹس شامل ہیں۔ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 
 // @require             https://update.greasyfork.org/scripts/581510/code.js
 // @require             https://update.greasyfork.org/scripts/581511/code.js
@@ -114,11 +114,11 @@
 // @compatible          safari
 // @compatible          brave
 // @compatible          opera
-// @copyright           2026, _init (https://greasyfork.org/users/1594049)
+// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
 // @version             2.0.1
-// @author              _init
+// @author              AMFI-Disable
 // @icon                https://geofs-assets.evengao6688.workers.dev/icons/information-display.png
 // @match               https://www.geo-fs.com/geofs.php*
 // @grant               none
