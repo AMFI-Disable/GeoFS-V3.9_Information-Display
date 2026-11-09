@@ -128,13 +128,33 @@
 // ==/UserScript==
 
 (() => {
-    
+    /**
+     * Runtime Version Guard: GeoFS-V3.9 Suite Compatibility
+     * Ensures this module only executes on GeoFS v3.9 or earlier, and gracefully
+     * deactivates if GeoFS v4.0+ is detected.
+     */
+    function isUnsupportedGeoFS() {
+        const raw = window.geofs?.version;
+        if (raw === undefined || raw === null) return false;
+        const clean = typeof raw === 'string' ? raw.replace(/^[^\d.]*/, '') : raw;
+        const num = typeof clean === 'number' ? clean : parseFloat(clean);
+        return !isNaN(num) && num >= 4.0;
+    }
+
+    if (isUnsupportedGeoFS()) {
+        console.warn("[GeoFS-V3.9_Information-Display] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        return;
+    }
 
     /**
      * Initialization routine: Registers the INFORMATION tab within the HUD.
      * Requires Core Library helper functions (registerHUDTab, hudCell).
      */
     window.initHUDInformationDisplayPro = () => {
+        if (isUnsupportedGeoFS()) {
+            console.warn("[GeoFS-V3.9_Information-Display] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+            return;
+        }
         if (window.hudInformationDisplayPro) return;
         
         console.log("[GeoFS-V3.9_Information-Display] >> Initializing telemetry display...");
@@ -282,6 +302,10 @@
         window.SafeInit('GeoFS-V3.9_Information-Display', window.initHUDInformationDisplayPro);
     } else {
         const checker = setInterval(() => {
+            if (isUnsupportedGeoFS()) {
+                clearInterval(checker);
+                return;
+            }
             if (window.registerHUDTab && window.hudCell) {
                 clearInterval(checker);
                 window.initHUDInformationDisplayPro();
