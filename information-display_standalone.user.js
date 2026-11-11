@@ -117,9 +117,9 @@
 // @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 
 // @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.1
+// @version             2.0.5
 // @author              AMFI-Disable
-// @icon                https://geofs-assets.evengao6688.workers.dev/icons/information-display.png
+// @icon                https://www.geo-fs.com/images/icons/favicon.ico
 // @match               https://www.geo-fs.com/geofs.php*
 // @grant               none
 // @license             MIT
@@ -188,24 +188,24 @@
         const idHTML = `
             <div id="hud-ac-header" style="grid-column: 1 / -1; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 10px;">
                 <div id="hud-ac-name" style="font-size: 11px; font-weight: 900; color: #fff;">Loading Aircraft...</div>
-                <div id="hud-ac-id-badge" style="display: inline-block; font-size: 7px; padding: 1px 4px; background: #ff9f05; color: #000; border-radius: 3px; font-weight: 800; margin-top: 4px;">ID: --</div>
+                <div id="hud-ac-id-badge" style="display: inline-block; font-size: 10px; padding: 1px 4px; background: #dddddd; color: #000; border-radius: 3px; font-weight: 800; margin-top: 4px;">ID: --</div>
             </div>
             <div class="hud-section-header full-width">Performance</div>
             ${safeCell('KTS KIAS', 'N/A', '', 'hud-kias')} 
-            ${safeCell('M MACH', 'N/A', '', 'hud-mach')} 
+            ${safeCell('FT ALT', 'N/A', '', 'hud-alt')}
+            ${safeCell('FPM V/S', 'N/A', '', 'hud-vs')}
+            ${safeCell('DEG HDG', 'N/A', '', 'hud-hdg')}
+            <div class="hud-section-header full-width">Additional data</div>
+            ${safeCell('M MACH', 'N/A', '', 'hud-mach')}
             ${safeCell('DEG AOA', 'N/A', '', 'hud-aoa')}
-            ${safeCell('G G-FORCE', 'N/A', '', 'hud-g')} 
-            ${safeCell('FPM V/S', 'N/A', '', 'hud-vs')} 
-            ${safeCell('FT ALT', 'N/A', '', 'hud-alt')} 
-            ${safeCell('FT AGL', 'N/A', '', 'hud-agl')} 
-            <div class="hud-section-header full-width">Navigation</div>
-            ${safeCell('DEG HDG', 'N/A', '', 'hud-hdg')} 
+            ${safeCell('G G-FORCE', 'N/A', '', 'hud-g')}
+            ${safeCell('FT AGL', 'N/A', '', 'hud-agl')}
             ${safeCell('KTS GS', 'N/A', '', 'hud-gs')} 
             ${safeCell('DEG GSLOPE', 'N/A', '', 'hud-gslope')}
         `;
         
         // Registration: Inject into the HUD tab manager
-        window.registerHUDTab('id', 'INFORMATION', idHTML, true);
+        window.registerHUDTab('id', 'INFO', idHTML, true);
         window.hudInformationDisplayPro = true;
 
         /**
@@ -232,7 +232,7 @@
                     if (data) {
                         // Known Aircraft: Use registry name
                         nameEl.textContent = data.name;
-                        badgeEl.style.background = "#ff9f05"; 
+                        badgeEl.style.background = "#dddddd"; 
                         badgeEl.textContent = `REG: ${ac.id}`;
                     } else {
                         // Unknown Aircraft: Stochastic "Identity Obfuscation" Logic
@@ -246,11 +246,11 @@
                         const rawName = ac.definition.externalName || ac.definition.name || "Unknown Aircraft";
                         const cleanName = rawName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
                         
-                        nameEl.innerHTML = `<span style="opacity: 0.6; font-style: italic;">${joke}</span><br><span style="font-size: 9px; font-weight: 400;">(${cleanName})</span>`;
+                        nameEl.innerHTML = `<span style="opacity: 0.6; font-style: italic;">${joke}</span><br><span style="font-size: 10px; font-weight: 400;">(${cleanName})</span>`;
                         badgeEl.style.background = "#94a3b8"; 
                         badgeEl.textContent = `ID: ${ac.id}`;
                     }
-                    if (window.V39_NOTIF) window.V39_NOTIF.info(`Identity Resolved: ${ac.id}`);
+
                 }
             }
 
