@@ -1,37 +1,24 @@
-# **GeoFS-V3.9**_Information-Display
+# GeoFS-V3.9_Information-Display
 
-![Version](https://img.shields.io/badge/Version-V2.0.1-3b82f6?style=flat-square&logo=git&logoColor=white)
-![Ecosystem](https://img.shields.io/badge/GeoFS--V3.9-Information_Display-0ea5e9?style=flat-square&logo=gitbook&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Stable-10b981?style=flat-square&logo=lighthouse&logoColor=white)
+![Version](https://img.shields.io/badge/Version-v3.9.0-3b82f6?style=flat-square)
 
-The centralized glass-cockpit data framework for **GeoFS-V3.9**. This module provides a high-density, real-time overlay for critical flight parameters, navigation data, and ecosystem-wide module integration.
+Displays aircraft identification and flight data in the shared HUD.
 
----
+## Features
 
-## ⚖️ Educational & Fair-Play Disclaimer
+- The **INFO** tab displays flight telemetry and aircraft information.
+- The shared HUD orders available tabs as **INFO → FUEL → CHECKS → REALISM**; tabs appear when their modules are available.
 
-> [!CAUTION]
-> **IMPORTANT NOTICE & DISCLAIMER**:
-> This codebase is provided strictly for educational, research, and testing purposes in authorized environments.
-> Using automated assistance or unauthorized scripts in violation of platform terms of service or anti-cheat policies may lead to account penalties.
-> The developers and contributors accept no responsibility or liability for misuse of this software.
+## Installation
 
----
+1. Install a userscript manager such as [Tampermonkey](https://www.tampermonkey.net/).
+2. Install or update the script from [Greasy Fork](https://greasyfork.org/en/scripts/581518-geofs-v3-9-information-display).
+3. Open or reload GeoFS V3.9. The script starts automatically.
 
-## ✨ Features
+The script activates only when GeoFS reports version V3.9 (including V3.9 patch releases). It waits for the version to become available and remains inactive on other versions. Most standalone scripts load the Core Library and Design System as dependencies; the userscript manager handles those dependencies.
 
-- **🔍 Live Aircraft Identification**: Real-time display of the current aircraft name and GeoFS ID badge.
-- **✨ Active HUD Telemetry**: Dynamic color-coded values for V/S, G-Force, and AOA based on flight state.
-- **📈 Speed Trend Indicators**: Visual micro-icons (▲/▼) showing real-time acceleration and deceleration.
-- **📊 High-Density Performance**: Optimized grouping of KIAS, Mach, and Envelope data for professional simulation.
-- **🧩 Module Hub**: Serves as the primary UI host for Checklist, Fuel, and Realism subsystems.
+The **GeoFS-V3.9_Ecosystem** panel shows startup status and notifications. Select × to dismiss it, or wait for it to disappear. A script listed as not detected is not necessarily uninstalled.
 
-## 🛠️ Installation
+## License
 
-### Standalone (Tampermonkey)
-
-1. Install the [Tampermonkey](https://www.tampermonkey.net/) extension.
-2. Install the script via [**Greasy Fork**](https://greasyfork.org/en/scripts/581518-geofs-v3-9-information-display).
-3. Refresh GeoFS and the module will automatically initialize alongside the HUD.
-
-*© 2026 AMFI-Disable. Part of the [**GeoFS-V3.9**_Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home).*
+[MIT](license) · © 2026 AMFI-Disable · [GeoFS-V3.9 Ecosystem](https://sites.google.com/view/geofs-v39-ecosystem/home)

@@ -50,7 +50,6 @@
 // @name:km             GeoFS-V3.9_ការបង្ហាញព័ត៌មាន
 // @name:lo             GeoFS-V3.9_ການສະແດງຂໍ້ມູນ
 // @name:ur             GeoFS-V3.9_معلوماتی-ڈسپلے
-
 // @description         Precision flight data HUD featuring glassmorphic telemetry readouts. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 // @description:vi      Dữ liệu chuyến bay chính xác HUD có các chỉ số đo từ xa dạng thủy tinh. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 // @description:zh-CN   具有玻璃形态遥测读数的精确飞行数据 HUD。 © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
@@ -103,46 +102,51 @@
 // @description:lo      ຂໍ້​ມູນ​ການ​ບິນ​ຄວາມ​ຊັດ​ເຈນ HUD ມີ​ການ​ອ່ານ telemetry glassmorphic​. © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 // @description:ur      عین مطابق فلائٹ ڈیٹا HUD جس میں گلاسمورفک ٹیلی میٹری ریڈ آؤٹس شامل ہیں۔ © 2026 AMFI-Disable. Part of the GeoFS-V3.9_Ecosystem.
 
+// @namespace           https://greasyfork.org/users/1594049
+// @version             3.9.0
+// @author              AMFI-Disable
+// @homepageURL         https://sites.google.com/view/geofs-v39-ecosystem/home
+// @icon                https://www.geo-fs.com/images/icons/favicon.ico
+// @match               https://www.geo-fs.com/geofs.php*
 // @require             https://update.greasyfork.org/scripts/581510/code.js
 // @require             https://update.greasyfork.org/scripts/581511/code.js
-
-// @homepageURL         https://sites.google.com/view/geofs-v39-ecosystem/home
-// @connect             greasyfork.org
+// @grant               none
+// @license             MIT
+// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
 // @compatible          chrome
 // @compatible          firefox
 // @compatible          edge
 // @compatible          safari
 // @compatible          brave
 // @compatible          opera
-// @copyright           2026, AMFI-Disable (https://greasyfork.org/users/1594049)
-
-// @namespace           https://greasyfork.org/users/1594049
-// @version             2.0.5
-// @author              AMFI-Disable
-// @icon                https://www.geo-fs.com/images/icons/favicon.ico
-// @match               https://www.geo-fs.com/geofs.php*
-// @grant               none
-// @license             MIT
-// @downloadURL https://update.greasyfork.org/scripts/581518/GeoFS-V39_Information-Display.user.js
-// @updateURL https://update.greasyfork.org/scripts/581518/GeoFS-V39_Information-Display.meta.js
 // ==/UserScript==
+
+// Wait for GeoFS to report its version before executing any module code.
+// Unknown, older, and newer versions never activate this V3.9 release.
+(function waitForGeoFSVersion() {
+    const version = window.geofs?.version;
+    if (version === undefined || version === null || version === '') {
+        setTimeout(waitForGeoFSVersion, 250);
+        return;
+    }
+    if (!/^(?:v)?3\.9(?:\.\d+)*$/i.test(String(version).trim())) {
+        console.warn('[GeoFS-V3.9_Information-Display] Inactive: GeoFS ' + version + ' is not V3.9.');
+        return;
+    }
+
 
 (() => {
     /**
      * Runtime Version Guard: GeoFS-V3.9 Suite Compatibility
-     * Ensures this module only executes on GeoFS v3.9 or earlier, and gracefully
-     * deactivates if GeoFS v4.0+ is detected.
+     * Allows this module to execute only when GeoFS reports version 3.9.
      */
     function isUnsupportedGeoFS() {
         const raw = window.geofs?.version;
-        if (raw === undefined || raw === null) return false;
-        const clean = typeof raw === 'string' ? raw.replace(/^[^\d.]*/, '') : raw;
-        const num = typeof clean === 'number' ? clean : parseFloat(clean);
-        return !isNaN(num) && num >= 4.0;
+        return !/^(?:v)?3\.9(?:\.\d+)*$/i.test(String(raw ?? '').trim());
     }
 
     if (isUnsupportedGeoFS()) {
-        console.warn("[GeoFS-V3.9_Information-Display] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+        console.warn("[GeoFS-V3.9_Information-Display] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9).");
         return;
     }
 
@@ -152,7 +156,7 @@
      */
     window.initHUDInformationDisplayPro = () => {
         if (isUnsupportedGeoFS()) {
-            console.warn("[GeoFS-V3.9_Information-Display] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9 and earlier).");
+            console.warn("[GeoFS-V3.9_Information-Display] Inactive: GeoFS v" + window.geofs?.version + " detected (suite only supports GeoFS v3.9).");
             return;
         }
         if (window.hudInformationDisplayPro) return;
@@ -312,4 +316,6 @@
             }
         }, 100);
     }
+})();
+
 })();
